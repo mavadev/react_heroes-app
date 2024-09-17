@@ -32,14 +32,14 @@ export const HeroPage = () => {
 						<b>Alter Ego:</b> {hero.alter_ego}
 					</li>
 					<li className="list-group-item">
-						<b>Publisher:</b> {hero.publisher}
+						<b>Publicado por:</b> {hero.publisher}
 					</li>
 					<li className="list-group-item">
-						<b>First Appearance:</b> {hero.first_appearance}
+						<b>Primera apariencia en:</b> {hero.first_appearance}
 					</li>
 				</ul>
 
-				<h5 className="mt-3">Characters</h5>
+				<h5 className="mt-3">Personajes</h5>
 				<p>{hero.characters}</p>
 
 				<button

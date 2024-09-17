@@ -38,7 +38,7 @@ export const Navbar = () => {
 							className="nav-item nav-link"
 							to="/search"
 						>
-							Search
+							Buscar
 						</NavLink>
 					</div>
 				</div>
@@ -51,7 +51,7 @@ export const Navbar = () => {
 							onClick={onLogout}
 							className="nav-item btn btn-danger"
 						>
-							Logout
+							Cerrar Sesión
 						</button>
 					</ul>
 				</div>
