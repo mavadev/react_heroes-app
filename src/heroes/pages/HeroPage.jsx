@@ -21,7 +21,7 @@ export const HeroPage = () => {
 				<img
 					alt={hero.superhero}
 					className="img-thumbnail"
-					src={`/assets/heroes/${id}.jpg`}
+					src={`/heroes/${id}.jpg`}
 				/>
 			</div>
 

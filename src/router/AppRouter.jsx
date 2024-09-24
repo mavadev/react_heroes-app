@@ -1,18 +1,36 @@
 import { Route, Routes } from 'react-router-dom';
-import { LoginPage } from '../auth';
+import { LoginPage, RegisterPage } from '../auth';
 import { HeroesRoutes } from '../heroes';
+import { PrivateRoute, PublicRoute } from '../router';
 
 export const AppRouter = () => {
 	return (
 		<Routes>
 			<Route
-				path="login"
-				element={<LoginPage />}
+				path="/auth/*"
+				element={
+					<PublicRoute>
+						<Routes>
+							<Route
+								path="login"
+								element={<LoginPage />}
+							/>
+							<Route
+								path="register"
+								element={<RegisterPage />}
+							/>
+						</Routes>
+					</PublicRoute>
+				}
 			/>
 			<Route
 				path="/*"
-				element={<HeroesRoutes />}
-			></Route>
+				element={
+					<PrivateRoute>
+						<HeroesRoutes />
+					</PrivateRoute>
+				}
+			/>
 		</Routes>
 	);
 };
