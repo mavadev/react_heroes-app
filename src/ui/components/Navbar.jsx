@@ -17,7 +17,7 @@ export const Navbar = () => {
 		<div className="bg-dark p-2">
 			<nav className="navbar navbar-expand-sm navbar-dark container">
 				<Link
-					to="/"
+					to="/marvel"
 					className="navbar-brand"
 				>
 					HeroesApp

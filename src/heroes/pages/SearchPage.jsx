@@ -39,7 +39,7 @@ export const SearchPage = () => {
 					onChange={onInputChange}
 					placeholder="Ingresa un heroe"
 				/>
-				<button className="btn btn-primary mt-1">Buscar</button>
+				<button className="btn btn-primary my-2">Buscar</button>
 			</form>
 
 			<hr />
